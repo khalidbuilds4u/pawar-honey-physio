@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Star, Activity, CheckCircle2 } from "lucide-react";
 
@@ -71,14 +72,16 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative lg:h-[600px] flex justify-center lg:justify-end"
           >
-            {/* Main Doctor Image Placeholder */}
             <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100 shadow-2xl">
-              <img 
+              <Image 
                 src="/doctor.jpg" 
                 alt="Dr. Hemlata - Physiotherapist"
-                className="object-cover object-top w-full h-full"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
 
             {/* Floating Review Card */}
