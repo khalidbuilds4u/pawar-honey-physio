@@ -74,11 +74,11 @@ export function HeroSection() {
             {/* Main Doctor Image Placeholder */}
             <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800" 
-                alt="Physiotherapist with patient"
-                className="object-cover w-full h-full"
+                src="/doctor.jpg" 
+                alt="Dr. Hemlata - Physiotherapist"
+                className="object-cover object-top w-full h-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
 
             {/* Floating Review Card */}
